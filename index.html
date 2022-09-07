@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>iPhone</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar__container">
+            <a href="#"><img src="./images/logo.png" alt="Logo_do_iphone" class="logo"></a>
+            <ul>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#" class="check">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPdos</a></li>
+                <li><a href="#">Only on Apple</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle">
+
+            </div>
+            <div class="main__text">
+                <img src="./images/iphone13.png" alt="">
+                <h3>Your new superpower</h3>
+                <p>Chips with impressive speed. A notable increase on battery life. And new voice and video features.<br> On iPhone 13, you do things you never could.and it comes in two sizes</p>
+                <h6>from $ 1199 </h6>
+                <a href="#" class="main__btn">Comprar</a>
+                <div class="text">
+                    <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="main__content">
+                    <span id="green" onclick="imageSlider('./images/green.png'); bkgCircle('#445c42')"></span> <!-- #384937-->
+                    <span id="pink" onclick="imageSlider('./images/pink.png'); bkgCircle('#ffc9cf')"></span> <!-- #f8ddd6-->
+                    <span id="blue" onclick="imageSlider('./images/blue.png'); bkgCircle('#0b839e')"></span> <!-- #225f7e-->
+                    <span id="black" onclick="imageSlider('./images/black.png'); bkgCircle('#092732')"></span> <!-- #192028-->
+                    <span id="white" onclick="imageSlider('./images/white.png'); bkgCircle('#e0dbd7')"></span> <!-- #f7f2ee-->
+                    <span id="red" onclick="imageSlider('./images/red.png'); bkgCircle('#cf4f68')"></span> <!-- #ae0617-->
+                </div>
+            </div>
+            <div class="main__img">
+                <img src="./images/green.png" alt="image__of__iphone" id="iphone">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        // Função para mudar o celular
+        function imageSlider(e){
+            document.querySelector('#iphone').src = e;
+        }
+
+        // Função para mudar a cor do circulo
+
+        function bkgCircle(color){
+            document.querySelector('.circle').style.background = color;
+        }
+    </script>
+</body>
+</html>
